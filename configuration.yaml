@@ -1,0 +1,125 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Casa
+  # Location required to calculate the time the sun rises and sets
+  latitude: 40.407606
+  longitude: -3.6659379
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 657
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Madrid
+  customize:
+    light.lightone_level_2_0:
+      friendly_name: Luz Prueba
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+logger:
+  default: info
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: pi
+  password: chinchin
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.1.1/24
+    home_interval: 5
+    track_new_devices: False
+    interval_seconds: 30
+  - platform: owntracks
+    max_gps_accuracy: 200
+    waypoints: True
+    waypoint_whitelist:
+      - grcanosa
+
+
+zone:
+  name: SEPSA
+  latitude: 40.247742
+  longitude: -3.709661
+  radius: 200
+  icon: mdi:worker
+
+zone 2:
+  name: Home
+  latitude: 40.407556
+  longitude: -3.669747
+  radius: 200
+  icon: mdi:home
+
+#ffmpeg:
+#  ffmpeg_bin: /usr/bin/avconv
+
+#camera:
+#  - platform: ffmpeg
+#    input: -f video4linux2 -i /dev/video0
+#    name: Camera
+
+#media_player:
+#  - platform: samsungtv
+#    host: 192.168.1.132
+
+zwave:
+  usb_path: /dev/ttyACM0
+  #config_path: /home/homeassistant/.homeassistant/
+  polling_interval: 30000
+  customize:
+    light.one:
+      polling_intensity: 1
+      
+
+
+script:
+  example_script:
+    alias: Encender y apagar
+    sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.lightone_level_2_0
+      - delay: 00:01:00
+      - service: light.turn_off
+        data:
+          entity_id: light.lightone_level_2_0
