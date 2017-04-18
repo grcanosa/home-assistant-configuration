@@ -13,9 +13,11 @@ homeassistant:
   customize:
     light.lightone_level_2_0:
       friendly_name: Luz Prueba
+    switch.switchone_switch_3_0:
+      friendly_name: Switch Termo
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -45,15 +47,16 @@ logger:
   default: info
 
 # Track the sun
-sun:
+#sun:
 
 # Weather Prediction
-sensor:
-  platform: yr
+#sensor:
+#  platform: yr
 
 # Text to speech
 tts:
   platform: google
+  language: es
 
 
 mqtt:
@@ -66,7 +69,8 @@ mqtt:
 device_tracker:
   - platform: nmap_tracker
     hosts: 192.168.1.1/24
-    home_interval: 5
+    home_interval: 10
+    consider_home: 600
     track_new_devices: False
     interval_seconds: 30
   - platform: owntracks
@@ -74,6 +78,7 @@ device_tracker:
     waypoints: True
     waypoint_whitelist:
       - grcanosa
+      - sara
 
 
 zone:
@@ -109,6 +114,7 @@ zwave:
   customize:
     light.one:
       polling_intensity: 1
+      refresh_value: True
       
 
 
@@ -123,3 +129,10 @@ script:
       - service: light.turn_off
         data:
           entity_id: light.lightone_level_2_0
+
+# Example configuration.yaml entry
+media_player:
+  - platform: vlc
+    name: Altavoz
+# arguments: '--alsa-audio-device=hw:1,0'
+
