@@ -1,0 +1,40 @@
+
+NAS:
+  hide_if_away: false
+  mac: 00:11:32:21:DB:D3
+  name: NAS
+  picture:
+  track: false
+  vendor: Synology Incorporated
+
+0016ea5f8c6e:
+  hide_if_away: false
+  mac: 00:16:EA:5F:8C:6E
+  name: 0016ea5f8c6e
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+dcef09c61676:
+  hide_if_away: false
+  mac: DC:EF:09:C6:16:76
+  name: dcef09c61676
+  picture:
+  track: false
+  vendor: NETGEAR
+
+PIXEL:
+  hide_if_away: false
+  mac: AC:37:43:50:79:F1
+  name: Gonzalo
+  picture:
+  track: true
+  vendor: HTC Corporation
+
+c4a366d35b1e:
+  hide_if_away: false
+  mac: C4:A3:66:D3:5B:1E
+  name: c4a366d35b1e
+  picture:
+  track: false
+  vendor: zte corporation
