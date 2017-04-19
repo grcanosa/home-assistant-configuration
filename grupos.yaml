@@ -3,6 +3,7 @@ default_view:
   icon: mdi:home
   entities:
     - group.all_devices
+    - group.all_automations
 familia:
   name: Gente
   icon: mdi:account-multiple

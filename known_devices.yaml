@@ -1,9 +1,16 @@
-
 pi_grcanosa:
   hide_if_away: false
   mac: AC:37:43:50:79:F1
   name: Gonzalo
   picture: local/gonzalo.jpg
+  track: true
+  vendor:
+
+pi_sara:
+  hide_if_away: false
+  mac: 40:78:6A:28:30:70
+  name: Sara
+  picture: local/sara.jpg
   track: true
   vendor:
 
@@ -118,14 +125,6 @@ dcef09c61676:
   picture:
   track: false
   vendor: NETGEAR
-
-pi_sara:
-  hide_if_away: false
-  mac: 40:78:6A:28:30:70
-  name: Sara
-  picture: local/image.jpeg
-  track: true
-  vendor:
 
 grcanosadellhome:
   hide_if_away: false
