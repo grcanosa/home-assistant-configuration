@@ -1,0 +1,4 @@
+Familia:
+  entities:
+    - device_tracker.grcanosa
+    - device_tracker.sara

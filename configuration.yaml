@@ -19,6 +19,8 @@ mqtt: !include mqtt.yaml
 
 device_tracker: !include device_tracker.yaml
 
+group: !include grupos.yaml
+
 zone:
   name: SEPSA
   latitude: 40.247742
@@ -46,6 +48,8 @@ zone 2:
 #    host: 192.168.1.132
 
 zwave: !include zwave.yaml
+
+automation: !include_dir_list automation
 
 script:
   example_script:
