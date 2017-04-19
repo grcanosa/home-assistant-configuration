@@ -10,16 +10,16 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Madrid
-  customize: !include_dir_merge_named customized
+  customize: !include_dir_merge_named include/customized
 
 
-http: !include httpconfig.yaml
+http: !include include/httpconfig.yaml
 
-mqtt: !include mqtt.yaml
+mqtt: !include include/mqtt.yaml
 
-device_tracker: !include device_tracker.yaml
+device_tracker: !include include/device_tracker.yaml
 
-group: !include_dir_merge_named grupos
+group: !include_dir_merge_named include/grupos
 
 zone:
   name: SEPSA
@@ -40,11 +40,11 @@ zone:
 #  - platform: samsungtv
 #    host: 192.168.1.132
 
-zwave: !include zwave.yaml
+zwave: !include include/zwave.yaml
 
-automation: !include_dir_list automation
+automation: !include_dir_list include/automation
 
-script: !include_dir_merge_named scripts
+script: !include_dir_merge_named include/scripts
 
 # Example configuration.yaml entry
 media_player:
