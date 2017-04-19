@@ -1,0 +1,5 @@
+group.zwave_control:
+  order: "1"
+
+group.familia:
+  order: "2"
