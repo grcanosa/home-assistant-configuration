@@ -51,7 +51,7 @@ zwave: !include zwave.yaml
 
 automation: !include_dir_list automation
 
-script: !include_dir_list scripts
+script: !include_dir_merge_named scripts
 
 # Example configuration.yaml entry
 media_player:

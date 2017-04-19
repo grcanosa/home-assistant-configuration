@@ -1,9 +1,0 @@
-alias: Encender termo media hora
-sequence:
-  - service: switch.turn_on
-    data:
-      entity_id: switch.switchone_switch_3_0
-  - delay: 00:01:00
-  - service: switch.turn_off
-    data:
-      entity_id: switch.switchone_switch_3_0
