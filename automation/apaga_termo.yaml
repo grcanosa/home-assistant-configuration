@@ -1,7 +1,9 @@
 alias: 'Apaga Termo'
 trigger:
-  platform: time
-  after: '06:00'
+  - platform: time
+    after: '06:00'
+  - platform: time
+    after: '13:59'
 action:
   service: switch.turn_off
   entity_id: switch.switchone_switch_3_0
