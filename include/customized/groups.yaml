@@ -12,7 +12,7 @@ group.zwave_control:
   order: "1"
 
 group.familia:
-  hidden: false
+  friendly_name: Prueba
   order: "10"
 
 group.switchone_sensors:
