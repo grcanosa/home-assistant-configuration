@@ -10,11 +10,8 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Madrid
-  customize:
-    light.lightone_level_2_0:
-      friendly_name: Luz Prueba
-    switch.switchone_switch_3_0:
-      friendly_name: Switch Termo
+  customize: !include_dir_merge_named customized
+
 
 # Show links to resources in log and frontend
 #introduction:
@@ -22,11 +19,7 @@ homeassistant:
 # Enables the frontend
 frontend:
 
-http:
-  # Uncomment this to add a password (recommended!)
-  api_password: password
-  # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
+http: !include httpconfig.yaml
 
 # Checks for available updates
 updater:
@@ -109,13 +102,13 @@ zone 2:
 
 zwave:
   usb_path: /dev/ttyACM0
-  #config_path: /home/homeassistant/.homeassistant/
-  polling_interval: 30000
-  customize:
-    light.one:
-      polling_intensity: 1
-      refresh_value: True
-      
+  config_path: /home/homeassistant/.homeassistant/
+  # polling_interval: 30000
+  # customize:
+  #   light.one:
+  #     polling_intensity: 1
+  #     refresh_value: True
+
 
 
 script:
@@ -135,4 +128,3 @@ media_player:
   - platform: vlc
     name: Altavoz
 # arguments: '--alsa-audio-device=hw:1,0'
-
