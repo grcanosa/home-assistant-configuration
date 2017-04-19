@@ -1,8 +1,0 @@
-# group.switchone_sensors:
-#   hidden: true
-# group.zwave_general:
-#   hidden: true
-group.all_automations:
-  hidden: false
-group.all_scripts:
-  hidden: false  
