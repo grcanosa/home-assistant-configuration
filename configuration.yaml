@@ -29,7 +29,7 @@ zone:
   icon: mdi:worker
 
 zone 2:
-  name: Home
+  name: Casa
   latitude: 40.407556
   longitude: -3.669747
   radius: 200
