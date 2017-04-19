@@ -1,4 +1,12 @@
-Familia:
+default_view:
+  view: yes
+  icon: mdi:home
   entities:
-    - device_tracker.grcanosa
-    - device_tracker.sara
+    - group.all_devices
+familia:
+  name: Gente
+  icon: mdi:account-multiple
+  view: yes
+  entities:
+    - device_tracker.pi_grcanosa
+    - device_tracker.pi_sara
