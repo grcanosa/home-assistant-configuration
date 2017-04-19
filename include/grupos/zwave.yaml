@@ -20,4 +20,3 @@ zwave_view:
     - group.zwave_general
     - group.zwave_control
     - group.switchone_sensors
-    - group.familia
