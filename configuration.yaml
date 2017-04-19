@@ -28,13 +28,6 @@ zone:
   radius: 200
   icon: mdi:worker
 
-zone 2:
-  name: Casa
-  latitude: 40.407556
-  longitude: -3.669747
-  radius: 200
-  icon: mdi:home
-
 #ffmpeg:
 #  ffmpeg_bin: /usr/bin/avconv
 
