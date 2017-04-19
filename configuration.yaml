@@ -19,7 +19,7 @@ mqtt: !include mqtt.yaml
 
 device_tracker: !include device_tracker.yaml
 
-group: !include grupos.yaml
+group: !include_dir_merge_named grupos
 
 zone:
   name: SEPSA
