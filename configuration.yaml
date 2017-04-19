@@ -13,66 +13,11 @@ homeassistant:
   customize: !include_dir_merge_named customized
 
 
-# Show links to resources in log and frontend
-#introduction:
-
-# Enables the frontend
-frontend:
-
 http: !include httpconfig.yaml
 
-# Checks for available updates
-updater:
+mqtt: !include mqtt.yaml
 
-# Discover some devices automatically
-discovery:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
-
-# Enables support for tracking state changes over time.
-history:
-
-# View all events in a logbook
-logbook:
-
-logger:
-  default: info
-
-# Track the sun
-#sun:
-
-# Weather Prediction
-#sensor:
-#  platform: yr
-
-# Text to speech
-tts:
-  platform: google
-  language: es
-
-
-mqtt:
-  broker: 127.0.0.1
-  port: 1883
-  client_id: home-assistant-1
-  username: pi
-  password: chinchin
-
-device_tracker:
-  - platform: nmap_tracker
-    hosts: 192.168.1.1/24
-    home_interval: 10
-    consider_home: 600
-    track_new_devices: False
-    interval_seconds: 30
-  - platform: owntracks
-    max_gps_accuracy: 200
-    waypoints: True
-    waypoint_whitelist:
-      - grcanosa
-      - sara
-
+device_tracker: !include device_tracker.yaml
 
 zone:
   name: SEPSA
@@ -109,8 +54,6 @@ zwave:
   #     polling_intensity: 1
   #     refresh_value: True
 
-
-
 script:
   example_script:
     alias: Encender y apagar
@@ -128,3 +71,38 @@ media_player:
   - platform: vlc
     name: Altavoz
 # arguments: '--alsa-audio-device=hw:1,0'
+
+tts:
+  platform: google
+  language: es
+
+# Enables the frontend
+frontend:
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+logger:
+  default: info
+
+# Track the sun
+#sun:
+
+# Weather Prediction
+#sensor:
+#  platform: yr
+
+# Show links to resources in log and frontend
+#introduction:
