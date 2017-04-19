@@ -1,9 +1,9 @@
-default_view:
-  view: yes
-  icon: mdi:home
-  entities:
-    - group.all_devices
-    - group.all_automations
+# default_view:
+#   view: yes
+#   icon: mdi:home
+#   entities:
+#     - group.all_devices
+#     - group.all_automations
 familia:
   name: Gente
   icon: mdi:account-multiple
@@ -11,3 +11,26 @@ familia:
   entities:
     - device_tracker.pi_grcanosa
     - device_tracker.pi_sara
+
+switchone:
+  name: Sensores Switch Termo
+  entities:
+    - sensor.switchone_alarm_level_3_1
+    - sensor.switchone_alarm_level_3_1
+    - sensor.switchone_alarm_level_3_10
+    - sensor.switchone_alarm_type_3_0
+    - sensor.switchone_current_3_20
+    - sensor.switchone_energy_3_0
+    - sensor.switchone_exporting_3_32
+    - sensor.switchone_interval_3_10
+    - sensor.switchone_interval_3_18
+    - sensor.switchone_interval_3_2
+    - sensor.switchone_interval_3_22
+    - sensor.switchone_power_3_8
+    - sensor.switchone_power_management_3_11
+    - sensor.switchone_previous_reading_3_1
+    - sensor.switchone_previous_reading_3_17
+    - sensor.switchone_previous_reading_3_21
+    - sensor.switchone_previous_reading_3_9
+    - sensor.switchone_sourcenodeid_3_2
+    - sensor.switchone_voltage_3_16
