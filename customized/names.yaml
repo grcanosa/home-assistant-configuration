@@ -2,3 +2,8 @@ light.lightone_level_2_0:
   friendly_name: Luz Prueba
 switch.switchone_switch_3_0:
   friendly_name: Switch Termo
+
+group.all_automations:
+  friendly_name: Automatic
+group.all_scripts:
+  friendly_name: Scripts
