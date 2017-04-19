@@ -7,7 +7,6 @@
 familia:
   name: Gente
   icon: mdi:account-multiple
-  view: yes
   entities:
     - device_tracker.pi_grcanosa
     - device_tracker.pi_sara
