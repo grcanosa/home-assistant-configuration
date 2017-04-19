@@ -1,0 +1,4 @@
+group.switchone_sensors:
+  hidden: true
+group.zwave_general:
+  hidden: true
