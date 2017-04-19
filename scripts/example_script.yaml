@@ -1,0 +1,9 @@
+alias: Encender y apagar luz
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id: light.lightone_level_2_0
+  - delay: 00:01:00
+  - service: light.turn_off
+    data:
+      entity_id: light.lightone_level_2_0

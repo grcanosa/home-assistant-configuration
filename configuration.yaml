@@ -51,17 +51,7 @@ zwave: !include zwave.yaml
 
 automation: !include_dir_list automation
 
-script:
-  example_script:
-    alias: Encender y apagar
-    sequence:
-      - service: light.turn_on
-        data:
-          entity_id: light.lightone_level_2_0
-      - delay: 00:01:00
-      - service: light.turn_off
-        data:
-          entity_id: light.lightone_level_2_0
+script: !include_dir_list scripts
 
 # Example configuration.yaml entry
 media_player:
