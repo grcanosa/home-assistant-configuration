@@ -7,3 +7,4 @@ all_view:
     - group.all_scripts
     - group.all_lights
     - group.all_switches
+    - group.all_devices
