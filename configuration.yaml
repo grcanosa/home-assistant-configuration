@@ -28,17 +28,19 @@ zone:
   radius: 200
   icon: mdi:worker
 
-#ffmpeg:
-#  ffmpeg_bin: /usr/bin/avconv
-
-#camera:
-#  - platform: ffmpeg
-#    input: -f video4linux2 -i /dev/video0
-#    name: Camera
-
-#media_player:
-#  - platform: samsungtv
-#    host: 192.168.1.132
+# Example configuration.yaml entry
+sensor:
+  - platform: speedtest
+    minute: 30
+    hour:
+      - 0
+      - 6
+      - 12
+      - 18
+    monitored_conditions:
+      - ping
+      - download
+      - upload
 
 zwave: !include include/zwave.yaml
 
