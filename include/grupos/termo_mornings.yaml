@@ -10,4 +10,5 @@ termo_automation:
   entities:
     - switch.switchone_switch_3_0
     - group.termo_mornings
+    - input_slider.termo_time
     - script.encender_termo_30

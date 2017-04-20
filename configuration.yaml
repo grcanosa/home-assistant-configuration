@@ -47,6 +47,15 @@ panel_iframe:
     title: 'Router'
     url: 'http://192.168.1.1'
 
+input_slider:
+  termo_time:
+    name: Tiempo de encendido
+    min: 0
+    max: 60
+    initial: 0
+    unit_of_measurement: step
+    step: 5
+
 zwave: !include include/zwave.yaml
 
 automation: !include_dir_list include/automation
