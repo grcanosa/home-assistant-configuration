@@ -1,4 +1,4 @@
-alias: 'Apaga Termo'
+alias: 'Apaga Termo 0600'
 trigger:
   platform: time
   after: '06:00'

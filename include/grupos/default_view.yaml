@@ -3,8 +3,8 @@ default_view:
   entities:
     - updater.updater
     - group.zwave_control
-    - group.all_automations
-    - group.all_scripts
+    - group.termo_automation
+#    - group.all_scripts
     - group.familia
     - sensor.switchone_power_3_8
     - sensor.switchone_energy_3_0

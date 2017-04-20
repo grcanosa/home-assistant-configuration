@@ -5,4 +5,4 @@ switch.switchone_switch_3_0:
 sensor.switchone_power_3_8:
   friendly_name: Termo Potencia
 sensor.switchone_energy_3_0:
-  friendly_name: Termo Eneria
+  friendly_name: Termo Energía

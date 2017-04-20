@@ -1,4 +1,4 @@
-alias: 'Enciende Termo'
+alias: 'Enciende Termo 0500'
 trigger:
   platform: time
   after: '05:00'
