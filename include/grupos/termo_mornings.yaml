@@ -6,6 +6,8 @@ termo_mornings:
 
 termo_automation:
   name: Termo
+  control: hidden
   entities:
+    - switch.switchone_switch_3_0
     - group.termo_mornings
     - script.encender_termo_30

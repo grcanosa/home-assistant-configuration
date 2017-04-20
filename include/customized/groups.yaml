@@ -8,6 +8,21 @@ group.all_scripts:
   hidden: false
   order: "6"
 
+group.all_lights:
+  friendly_name: Luces
+  hidden: false
+  order: "3"
+
+group.all_switches:
+  friendly_name: Interruptores
+  hidden: false
+  order: "2"
+
+group.all_devices:
+  friendly_name: Devices
+  hidden: false
+  order: "4"
+
 group.zwave_control:
   order: "1"
 

@@ -2,7 +2,7 @@ default_view:
   view: yes
   entities:
     - updater.updater
-    - group.zwave_control
+#    - group.zwave_control
     - group.termo_automation
 #    - group.all_scripts
     - group.familia
