@@ -42,6 +42,11 @@ sensor:
       - download
       - upload
 
+panel_iframe:
+  router:
+    title: 'Router'
+    url: 'http://192.168.1.1'
+
 zwave: !include include/zwave.yaml
 
 automation: !include_dir_list include/automation
