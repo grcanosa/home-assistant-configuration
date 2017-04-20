@@ -8,3 +8,4 @@ default_view:
     - group.familia
     - sensor.switchone_power_3_8
     - sensor.switchone_energy_3_0
+    - group.speedtest
