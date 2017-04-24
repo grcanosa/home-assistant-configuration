@@ -43,16 +43,13 @@ sensor:
       - upload
 
 panel_iframe:
-  router:
-    title: 'Router'
-    url: 'http://192.168.1.1'
   music:
     title: "Music"
     url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
 
 input_slider:
   termo_time:
-    name: Tiempo de encendido
+    name: Encender termo
     min: 0
     max: 60
     initial: 0
