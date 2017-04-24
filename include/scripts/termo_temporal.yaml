@@ -1,10 +1,13 @@
 termo_temporal:
   alias: Termo temporal
   sequence:
+    - service: notify.grcanosabot
+      data:
+        message "Entering script"
     - service: input_boolean.turn_on
       data:
         entity_id: input_boolean.aux_bool
-    - delay: 00:00:{{states.input_slider.termo_time.attributes.step | int }}
+    - delay: 00:00:{{ int(states.input_slider.termo_time.attributes.step) }}
     - service: input_slider.select_value
       data_template:
         entity_id: input_slider.termo_time

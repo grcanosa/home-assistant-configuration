@@ -11,4 +11,4 @@ default_view:
     - group.speedtest
     - input_boolean.aux_bool
     - binary_sensor.aux_binary
-    - sensor.aux_sensor
+    - sensor.aux_val

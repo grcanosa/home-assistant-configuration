@@ -72,7 +72,7 @@ binary_sensor:
   - platform: template
     sensors:
       aux_binary:
-        value_template: '{{ states.input_slider.termo_time.state > 0}}'
+        value_template: '{{ int(states.input_slider.termo_time.state) > 0}}'
         friendly_name: 'Sensor Auxiliary'
 
 notify:
