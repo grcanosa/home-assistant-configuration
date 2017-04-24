@@ -57,7 +57,7 @@ input_slider:
   termo_time:
     name: Encender termo
     min: 0
-    max: 60
+    max: 90
     initial: 0
     unit_of_measurement: step
     step: 5
@@ -72,7 +72,7 @@ binary_sensor:
   - platform: template
     sensors:
       aux_binary:
-        value_template: '{{ states.input_slider.termo_time.state > 0 }}'
+        value_template: '{{ states.input_slider.termo_time.state | int > 0 }}'
         friendly_name: 'Sensor Auxiliary'
 
 notify:

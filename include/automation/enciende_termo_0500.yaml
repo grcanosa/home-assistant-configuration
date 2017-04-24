@@ -3,5 +3,7 @@ trigger:
   platform: time
   after: '05:00'
 action:
-  service: switch.turn_on
-  entity_id: switch.switchone_switch_3_0
+  service: input_slider.select_value
+  data_template:
+    entity_id: input_slider.termo_time
+    value: '60'
