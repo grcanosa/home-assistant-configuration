@@ -2,9 +2,12 @@ alias: Termo Time
 trigger:
   platform: state
   entity_id: input_slider.termo_time
-condition:
-  condition: template
-  value_template: '{{ states.input_slider.termo_time.state > 0 }}'
+# condition:
+#   condition: template
+#   value_template: '{{ int(states.input_slider.termo_time.state) > 0 }}'
 action:
-  service: script.turn_on
-  entity_id: script.termo_temporal
+  - service: notify.grcanosabot
+    data:
+      message: "Trigger OK"
+  - service: script.turn_on
+    entity_id: script.termo_temporal
