@@ -56,6 +56,12 @@ input_slider:
     unit_of_measurement: step
     step: 5
 
+input_boolean:
+  aux_bool:
+    name: Auxiliary
+    initial: off
+    icon: mdi:car
+
 zwave: !include include/zwave.yaml
 
 automation: !include_dir_list include/automation

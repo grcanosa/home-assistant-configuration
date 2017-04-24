@@ -9,3 +9,4 @@ default_view:
     - sensor.switchone_power_3_8
     - sensor.switchone_energy_3_0
     - group.speedtest
+    - input_boolean.aux_bool
