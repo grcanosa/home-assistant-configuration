@@ -3,7 +3,7 @@ termo_temporal:
   sequence:
     - service: notify.grcanosabot
       data:
-        message "Entering script"
+        message: "Entering script"
     - service: input_boolean.turn_on
       data:
         entity_id: input_boolean.aux_bool
