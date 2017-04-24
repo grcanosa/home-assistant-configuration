@@ -43,7 +43,7 @@ sensor:
       - upload
   - platform: template
     sensors:
-      aux_sensor:
+      aux_val:
         value_template: '{{ states.input_slider.termo_time.attributes.step }}'
         friendly_name: 'Step'
         unit_of_measurement: 'unit'
@@ -71,7 +71,7 @@ input_boolean:
 binary_sensor:
   - platform: template
     sensors:
-      aux_sensor:
+      aux_binary:
         value_template: '{{ states.input_slider.termo_time.state > 0}}'
         friendly_name: 'Sensor Auxiliary'
 
