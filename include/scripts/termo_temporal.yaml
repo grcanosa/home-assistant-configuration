@@ -7,7 +7,7 @@ termo_temporal:
     - service: input_boolean.turn_on
       data:
         entity_id: input_boolean.aux_bool
-    - delay: 00:00:{{ int(states.input_slider.termo_time.attributes.step) }}
+    - delay: 00:00:05
     - service: input_slider.select_value
       data_template:
         entity_id: input_slider.termo_time
