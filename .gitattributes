@@ -1,3 +1,4 @@
 #pattern  filter=crypt diff=crypt
 secrets.yaml filter=crypt diff=crypt
 known_devices.yaml filter=crypt diff=crypt
+configs/appdaemon.cfg filter=crypt diff=crypt
