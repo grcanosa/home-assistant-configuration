@@ -41,23 +41,45 @@ sensor:
       - ping
       - download
       - upload
+  - platform: template
+    sensors:
+      aux_val:
+        value_template: '{{ states.input_slider.termo_time.state }}'
+        friendly_name: 'Slider State'
+        unit_of_measurement: 'unit'
 
 panel_iframe:
-  router:
-    title: 'Router'
-    url: 'http://192.168.1.1'
   music:
     title: "Music"
     url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
 
 input_slider:
   termo_time:
-    name: Tiempo de encendido
+    name: Encender termo
     min: 0
     max: 60
     initial: 0
     unit_of_measurement: step
     step: 5
+
+input_boolean:
+  aux_bool:
+    name: Auxiliary
+    initial: off
+    icon: mdi:car
+
+binary_sensor:
+  - platform: template
+    sensors:
+      aux_binary:
+        value_template: '{{ states.input_slider.termo_time.state > 0 }}'
+        friendly_name: 'Sensor Auxiliary'
+
+notify:
+  - name: grcanosabot
+    platform: telegram
+    api_key: 299955644:AAEBQY-7kb0PkC4LOfpirIzKi71RGnDoIBw
+    chat_id: 15111383
 
 zwave: !include include/zwave.yaml
 
