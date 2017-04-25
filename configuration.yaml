@@ -59,7 +59,7 @@ input_slider:
     min: 0
     max: 90
     initial: 0
-    unit_of_measurement: step
+    unit: "min"
     step: 5
 
 input_boolean:
