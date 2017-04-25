@@ -1,3 +1,0 @@
-[submodule "home-assistant-apps"]
-	path = home-assistant-apps
-	url = https://github.com/grcanosa/home-assistant-apps.git
