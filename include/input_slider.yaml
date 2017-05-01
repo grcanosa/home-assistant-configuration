@@ -3,5 +3,5 @@ termo_time:
   min: 0
   max: 90
   initial: 0
-  unit: "min"
+  unit_of_measurement: "min"
   step: 5
