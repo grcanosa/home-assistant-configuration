@@ -5,5 +5,5 @@ trigger:
 action:
   service: input_slider.select_value
   data_template:
-    entity_id: input_slider.termo_time
+    entity_id: input_slider.slider_termo_time
     value: '60'
