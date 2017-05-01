@@ -48,8 +48,8 @@ panel_iframe:
 notify:
   - name: grcanosabot
     platform: telegram
-    api_key: 299955644:AAEBQY-7kb0PkC4LOfpirIzKi71RGnDoIBw
-    chat_id: 15111383
+    api_key: !secret grcanosabot_apikey
+    chat_id: !secret grcanosa_chatid
 
 
 # Example configuration.yaml entry
