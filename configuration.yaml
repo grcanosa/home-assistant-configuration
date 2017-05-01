@@ -21,6 +21,17 @@ device_tracker: !include include/device_tracker.yaml
 
 group: !include_dir_merge_named include/grupos
 
+zwave: !include include/zwave.yaml
+
+automation: !include_dir_list include/automation
+
+script: !include_dir_merge_named include/scripts
+
+# Example configuration.yaml entry
+sensor: !include include/sensors.yaml
+
+input_slider: !include include/input_slider.yaml
+
 zone:
   name: SEPSA
   latitude: 40.247742
@@ -28,52 +39,11 @@ zone:
   radius: 200
   icon: mdi:worker
 
-# Example configuration.yaml entry
-sensor:
-  - platform: speedtest
-    minute: 30
-    hour:
-      - 0
-      - 6
-      - 12
-      - 18
-    monitored_conditions:
-      - ping
-      - download
-      - upload
-  - platform: template
-    sensors:
-      aux_val:
-        value_template: '{{ states.input_slider.termo_time.state }}'
-        friendly_name: 'Slider State'
-        unit_of_measurement: 'unit'
 
 panel_iframe:
   music:
     title: "Music"
     url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
-
-input_slider:
-  termo_time:
-    name: Encender termo
-    min: 0
-    max: 60
-    initial: 0
-    unit_of_measurement: step
-    step: 5
-
-input_boolean:
-  aux_bool:
-    name: Auxiliary
-    initial: off
-    icon: mdi:car
-
-binary_sensor:
-  - platform: template
-    sensors:
-      aux_binary:
-        value_template: '{{ states.input_slider.termo_time.state > 0 }}'
-        friendly_name: 'Sensor Auxiliary'
 
 notify:
   - name: grcanosabot
@@ -81,11 +51,6 @@ notify:
     api_key: 299955644:AAEBQY-7kb0PkC4LOfpirIzKi71RGnDoIBw
     chat_id: 15111383
 
-zwave: !include include/zwave.yaml
-
-automation: !include_dir_list include/automation
-
-script: !include_dir_merge_named include/scripts
 
 # Example configuration.yaml entry
 media_player:
@@ -127,3 +92,18 @@ logger:
 
 # Show links to resources in log and frontend
 #introduction:
+
+
+
+input_boolean:
+  boolean1:
+    name: Auxiliary
+    initial: off
+    icon: mdi:car
+#
+# binary_sensor:
+#   - platform: template
+#     sensors:
+#       aux_binary:
+#         value_template: '{{ states.input_slider.termo_time.state | int > 0 }}'
+#         friendly_name: 'Sensor Auxiliary'

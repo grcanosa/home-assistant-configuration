@@ -1,14 +1,6 @@
-termo_mornings:
-  name: Termo mañanas 05-06
-  entities:
-    - automation.enciende_termo_0500
-    - automation.apaga_termo_0600
-
 termo_automation:
   name: Termo
   control: hidden
   entities:
     - switch.switchone_switch_3_0
-    - group.termo_mornings
-    - input_slider.termo_time
-    - script.encender_termo_30
+    - input_slider.slider_termo_time
