@@ -95,11 +95,11 @@ logger:
 
 
 
-# input_boolean:
-#   aux_bool:
-#     name: Auxiliary
-#     initial: off
-#     icon: mdi:car
+input_boolean:
+  boolean1:
+    name: Auxiliary
+    initial: off
+    icon: mdi:car
 #
 # binary_sensor:
 #   - platform: template
