@@ -1,4 +1,4 @@
-termo_time:
+slider_termo_time:
   name: Termo (min)
   min: 0
   max: 90
