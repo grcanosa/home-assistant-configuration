@@ -1,7 +1,9 @@
 alias: 'Enciende Termo 0500'
 trigger:
-  platform: time
-  after: '05:00'
+  - platform: time
+    after: '05:00'
+  - platform: time
+    after: '13:04'
 action:
   service: input_slider.select_value
   data_template:
