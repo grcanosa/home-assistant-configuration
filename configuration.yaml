@@ -30,6 +30,8 @@ script: !include_dir_merge_named include/scripts
 # Example configuration.yaml entry
 sensor: !include include/sensors.yaml
 
+binary_sensor: !include include/binary_sensors.yaml
+
 input_slider: !include include/input_slider.yaml
 
 zone:
