@@ -52,6 +52,10 @@ notify:
     platform: telegram
     api_key: !secret grcanosabot_apikey
     chat_id: !secret grcanosa_chatid
+  - name: sarabot
+    platform: telegram
+    api_key: !secret grcanosabot_apikey
+    chat_id: !secret sara_chatid
 
 
 # Example configuration.yaml entry
