@@ -48,11 +48,11 @@ panel_iframe:
     url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
 
 notify:
-  - name: grcanosabot
+  - name: bot_to_grcanosa
     platform: telegram
     api_key: !secret grcanosabot_apikey
     chat_id: !secret grcanosa_chatid
-  - name: sarabot
+  - name: bot_to_sara
     platform: telegram
     api_key: !secret grcanosabot_apikey
     chat_id: !secret sara_chatid
