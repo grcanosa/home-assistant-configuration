@@ -8,7 +8,7 @@ zwave_control:
 zwave_general:
   name: Zwave
   entities:
-    - zwave.lightone_2
+    #- zwave.lightone_2
     - zwave.switchone_3
     - zwave.zwaveme_zme_uzb1_usb_stick_1
 
