@@ -42,19 +42,25 @@ zone:
   icon: mdi:worker
 
 
-panel_iframe:
-  music:
-    title: "Music"
-    url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
+#panel_iframe:
+#  music:
+#    title: "Music"
+#    url: 'http://192.168.1.98:6680/musicbox_webclient/index.html'
+
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret grcanosabot_apikey
+    allowed_chat_ids:
+      - !secret grcanosa_chatid
+      - !secret sara_chatid
 
 notify:
   - name: bot_to_grcanosa
     platform: telegram
-    api_key: !secret grcanosabot_apikey
     chat_id: !secret grcanosa_chatid
   - name: bot_to_sara
     platform: telegram
-    api_key: !secret grcanosabot_apikey
     chat_id: !secret sara_chatid
 
 
@@ -82,6 +88,9 @@ conversation:
 
 # Enables support for tracking state changes over time.
 history:
+
+recorder:
+  purge_days: 7
 
 # View all events in a logbook
 logbook:
