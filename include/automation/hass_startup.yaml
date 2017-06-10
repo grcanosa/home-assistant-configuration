@@ -1,5 +1,5 @@
 alias: 'Hass startup'
-hidden: True
+hide_entity: True
 trigger:
   - platform: event
     event_type: homeassistant_start
