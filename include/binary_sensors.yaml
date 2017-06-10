@@ -1,4 +1,0 @@
-# - platform: mqtt
-#   state_topic: hass/dash/fairy
-#   name: Fairy Dash
-#   device_class: motion

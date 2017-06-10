@@ -1,3 +1,0 @@
-usb_path: /dev/ttyACM0
-#config_path: /home/homeassistant/.homeassistant/
-polling_interval: 30000

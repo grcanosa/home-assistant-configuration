@@ -1,8 +1,0 @@
-# termo_temporal:
-#   alias: Termo temporal
-#   sequence:
-#     - delay: '00:00:{{ states.input_slider.termo_time.attributes.step | int }}'
-#     - service: input_slider.select_value
-#       data_template:
-#         entity_id: input_slider.termo_time
-#         value: '{{ states.input_slider.termo_time.state | int - states.input_slider.termo_time.attributes.step | int }}'
