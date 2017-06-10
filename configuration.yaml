@@ -1,6 +1,6 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: Casa
   # Location required to calculate the time the sun rises and sets
   latitude: 40.4165
   longitude: -3.7026
@@ -10,6 +10,8 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Madrid
+  # Customization
+  customize: !include_dir_merge_named include/customized
 
 # Show links to resources in log and frontend
 introduction:
@@ -22,7 +24,7 @@ config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  api_password: !secret apipassword
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
@@ -46,15 +48,32 @@ history:
 logbook:
 
 # Track the sun
-sun:
+#sun:
 
 # Weather Prediction
-sensor:
-  platform: yr
+#sensor:
+#  platform: yr
 
 # Text to speech
 tts:
   platform: google
 
-group: !include groups.yaml
-automation: !include automations.yaml
+group: !include_dir_merge_named include/grupos
+automation: !include_dir_list include/automation
+
+zwave: !include include/zwave.yaml
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret grcanosabot_apikey
+    allowed_chat_ids:
+      - !secret grcanosa_chatid
+      - !secret sara_chatid
+
+notify:
+  - name: bot_to_grcanosa
+    platform: telegram
+    chat_id: !secret grcanosa_chatid
+  - name: bot_to_sara
+    platform: telegram
+    chat_id: !secret sara_chatid
