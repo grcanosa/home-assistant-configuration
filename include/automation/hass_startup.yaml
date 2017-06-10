@@ -1,0 +1,10 @@
+alias: 'Hass startup'
+hidden: True
+trigger:
+  - platform: event
+    event_type: homeassistant_start
+action:
+  - service: notify.bot_to_grcanosa
+    data:
+      message: 'HASS STARTING'
+

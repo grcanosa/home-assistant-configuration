@@ -2,10 +2,10 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Casa
   # Location required to calculate the time the sun rises and sets
-  latitude: 40.4165
-  longitude: -3.7026
+  latitude: 40.407606
+  longitude: -3.6659379
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 649
+  elevation: 657
   # metric for Metric, imperial for Imperial
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -14,7 +14,7 @@ homeassistant:
   customize: !include_dir_merge_named include/customized
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
