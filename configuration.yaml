@@ -65,6 +65,8 @@ zwave: !include include/zwave.yaml
 
 input_slider: !include include/input_slider.yaml
 
+sensor: !include include/sensors.yaml
+
 telegram_bot:
   - platform: polling
     api_key: !secret grcanosabot_apikey
