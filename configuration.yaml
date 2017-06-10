@@ -63,6 +63,8 @@ automation: !include_dir_list include/automation
 
 zwave: !include include/zwave.yaml
 
+input_slider: !include include/input_slider.yaml
+
 telegram_bot:
   - platform: polling
     api_key: !secret grcanosabot_apikey

@@ -1,0 +1,7 @@
+slider_termo_time:
+  name: Termo (min)
+  min: 0
+  max: 90
+  initial: 0
+  unit_of_measurement: "min"
+  step: 5
