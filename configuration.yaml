@@ -86,7 +86,7 @@ notify:
 weblink:
   entities:
     - name: Router
-      url: http://grcanosa.com
+      url: http://router.grcanosa.com
       icon: mdi:router-wireless
     - name: NAS
       url: http://nas.grcanosa.com
