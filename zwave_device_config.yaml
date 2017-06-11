@@ -1,0 +1,18 @@
+sensor.switchone_alarm_level_3_1:
+  ignored: true
+  polling_intensity: 0
+sensor.switchone_alarm_type_3_0:
+  ignored: true
+  polling_intensity: 0
+sensor.switchone_interval_3_10:
+  ignored: true
+  polling_intensity: 0
+sensor.switchone_interval_3_18:
+  ignored: true
+  polling_intensity: 0
+sensor.switchone_interval_3_2:
+  ignored: true
+  polling_intensity: 0
+sensor.switchone_interval_3_22:
+  ignored: true
+  polling_intensity: 0
