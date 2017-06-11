@@ -81,3 +81,16 @@ notify:
   - name: bot_to_sara
     platform: telegram
     chat_id: !secret sara_chatid
+
+
+weblink:
+  entities:
+    - name: Router
+      url: http://grcanosa.com
+      icon: mdi:router-wireless
+    - name: NAS
+      url: http://nas.grcanosa.com
+      icon: mdi:network
+    - name: Libros
+      url: http://libros.grcanosa.com
+      icon: mdi:book
