@@ -2,5 +2,5 @@ termo_automation:
   name: Termo
   control: hidden
   entities:
-    - switch.switchone_switch_3_0
+    - switch.switchone_switch
     - input_slider.slider_termo_time

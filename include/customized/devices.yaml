@@ -1,7 +1,7 @@
 # Test empty file
-switch.switchone_switch_3_0:
+switch.switchone_switch:
   friendly_name: Switch Termo
-sensor.switchone_power_3_8:
+sensor.switchone_power:
   friendly_name: Termo Potencia
-sensor.switchone_energy_3_0:
+sensor.switchone_energy:
   friendly_name: Termo Energía

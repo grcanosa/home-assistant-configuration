@@ -1,22 +1,22 @@
 switchone_sensors:
   name: Sensores Switch Termo
   entities:
-    - sensor.switchone_alarm_level_3_1
-    - sensor.switchone_alarm_level_3_1
-    - sensor.switchone_alarm_level_3_10
-    - sensor.switchone_alarm_type_3_0
-    - sensor.switchone_current_3_20
-    - sensor.switchone_energy_3_0
-    - sensor.switchone_exporting_3_32
-    - sensor.switchone_interval_3_10
-    - sensor.switchone_interval_3_18
-    - sensor.switchone_interval_3_2
-    - sensor.switchone_interval_3_22
-    - sensor.switchone_power_3_8
-    - sensor.switchone_power_management_3_11
-    - sensor.switchone_previous_reading_3_1
-    - sensor.switchone_previous_reading_3_17
-    - sensor.switchone_previous_reading_3_21
-    - sensor.switchone_previous_reading_3_9
-    - sensor.switchone_sourcenodeid_3_2
-    - sensor.switchone_voltage_3_16
+    - sensor.switchone_alarm_level
+    - sensor.switchone_alarm_level_2
+    - sensor.switchone_alarm_level_3
+    - sensor.switchone_alarm_type
+    - sensor.switchone_current
+    - sensor.switchone_energy
+    - sensor.switchone_exporting
+    - sensor.switchone_interval
+    - sensor.switchone_interval_2
+    - sensor.switchone_interval_3
+    - sensor.switchone_interval_4
+    - sensor.switchone_power
+    - sensor.switchone_power_management
+    - sensor.switchone_previous_reading
+    - sensor.switchone_previous_reading_2
+    - sensor.switchone_previous_reading_3
+    - sensor.switchone_previous_reading_4
+    - sensor.switchone_sourcenodeid
+    - sensor.switchone_voltage

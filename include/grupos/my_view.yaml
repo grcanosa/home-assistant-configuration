@@ -8,6 +8,6 @@ my_view:
     - group.termo_automation
 #    - group.all_scripts
     - group.familia
-    - sensor.switchone_power_3_8
-    - sensor.switchone_energy_3_0
+    - sensor.switchone_power
+    - sensor.switchone_energy
     - group.speedtest
