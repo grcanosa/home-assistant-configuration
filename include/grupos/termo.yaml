@@ -3,4 +3,4 @@ termo_automation:
   control: hidden
   entities:
     - switch.switchone_switch
-    - input_slider.slider_termo_time
+    - input_number.slider_termo_time
