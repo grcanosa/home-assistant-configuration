@@ -63,7 +63,7 @@ automation: !include_dir_list include/automation
 
 zwave: !include include/zwave.yaml
 
-input_slider: !include include/input_slider.yaml
+input_number: !include include/input_slider.yaml
 
 sensor: !include include/sensors.yaml
 

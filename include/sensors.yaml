@@ -12,6 +12,6 @@
 - platform: template
   sensors:
     sensor_termo_time:
-      value_template: '{{ states.input_slider.slider_termo_time.state }}'
+      value_template: '{{ states.input_number.slider_termo_time.state }}'
       friendly_name: 'Termo (min)'
       unit_of_measurement: 'min'

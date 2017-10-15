@@ -13,4 +13,4 @@ termo_timed:
   class: TimedSlider
   module: timedslider
   onoff: switch.switchone_switch
-  slider: input_slider.slider_termo_time
+  slider: input_number.slider_termo_time

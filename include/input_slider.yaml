@@ -1,5 +1,6 @@
 slider_termo_time:
   name: Termo (min)
+  mode: slider
   min: 0
   max: 90
   initial: 0
