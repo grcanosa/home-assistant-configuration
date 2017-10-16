@@ -3,7 +3,7 @@ trigger:
   - platform: time
     at: '05:00'
 action:
-  service: input_slider.select_value
+  service: input_number.select_value
   data_template:
-    entity_id: input_slider.slider_termo_time
+    entity_id: input_number.slider_termo_time
     value: '60'
