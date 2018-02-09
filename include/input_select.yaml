@@ -1,8 +1,11 @@
 termo_start_time:
-  name: Termo start time
+  name: Hora inicio
+  initial: "05:00"
   options:
     - "04:00"
+    - "04:30"
     - "05:00"
+    - "05:30"
     - "06:00"
     - "07:00"
     - "08:00"

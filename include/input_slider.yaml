@@ -1,5 +1,5 @@
 slider_termo_time:
-  name: Termo (min)
+  name: Tiempo restante
   mode: slider
   min: 0
   max: 90
@@ -7,7 +7,7 @@ slider_termo_time:
   unit_of_measurement: "min"
   step: 5
 slider_termo_start_time:
-  name: Termo start (min)
+  name: Duración inicial
   mode: slider
   min: 30
   max: 120

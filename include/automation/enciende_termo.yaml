@@ -1,0 +1,11 @@
+alias: 'Enciende Termo'
+trigger:
+  - platform: state
+    entity_id: binary_sensor.termo_start
+    to: 'on'
+action:
+  service: input_number.set_value
+  data_template:
+    entity_id: input_number.slider_termo_time
+    value: 60
+#    {{input_select.slider_termo_start_time.state}}

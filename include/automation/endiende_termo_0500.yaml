@@ -1,9 +1,0 @@
-alias: 'Enciende Termo 0500'
-trigger:
-  - platform: time
-    at: '05:00'
-action:
-  service: input_number.set_value
-  data_template:
-    entity_id: input_number.slider_termo_time
-    value: '60'
