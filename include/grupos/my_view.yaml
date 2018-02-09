@@ -5,7 +5,7 @@ my_view:
   entities:
     - updater.updater
 #    - group.zwave_control
-    - group.termo_automation
+    - group.termo_group
 #    - group.all_scripts
     - group.familia
     - sensor.switchone_power

@@ -1,0 +1,6 @@
+termo_automation:
+  name: "Termo Automation"
+  entities:
+    - automation.enciende_termo_0500
+    - input_select.termo_start_time
+    - input_number.slider_termo_start_time

@@ -1,6 +1,7 @@
-termo_automation:
+termo_group:
   name: Termo
   control: hidden
   entities:
     - switch.switchone_switch
     - input_number.slider_termo_time
+    - group.termo_automation

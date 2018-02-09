@@ -6,3 +6,11 @@ slider_termo_time:
   initial: 0
   unit_of_measurement: "min"
   step: 5
+slider_termo_start_time:
+  name: Termo start (min)
+  mode: slider
+  min: 30
+  max: 120
+  initial: 60
+  unit_of_measurement: "min"
+  step: 5
