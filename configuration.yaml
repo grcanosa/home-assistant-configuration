@@ -67,19 +67,12 @@ zwave: !include include/zwave.yaml
 input_number: !include include/input_slider.yaml
 input_select: !include include/input_select.yaml
 
-#input_text:
-#  texttest:
-#    name: "Test"
-#    initial: "12:30"
 
 sensor: !include include/sensors.yaml
 binary_sensor: !include include/binarysensors.yaml
-#binary_sensor:    
-#  - platform: template
-#    sensors:
-#      termo_start:
-#        value_template: '{{states("input_select.termo_start_time") == "04:00:00"}}'
-#        friendly_name: 'Scrubber Light Off' 
+
+device_tracker: !include include/device_tracker.yaml
+
 
 telegram_bot:
   - platform: polling
