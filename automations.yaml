@@ -19,7 +19,6 @@
 #  - data_template:
 #      message: "{{states('input_number.slider_termo_start_time')}}"
 #      message: "HASS STARTS"
-    service: notify.bot_to_grcanosa
   alias: hass_startup
   condition: []
   id: 'hass_startup'
