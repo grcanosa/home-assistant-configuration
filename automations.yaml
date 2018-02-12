@@ -13,8 +13,12 @@
       value: 60
     service: input_number.set_value
 - action:
-  - data:
-      message: "HASS starting"
+  - service: notify.bot_to_grcanosa
+    data:
+      message: "HASS started"
+#  - data_template:
+#      message: "{{states('input_number.slider_termo_start_time')}}"
+#      message: "HASS STARTS"
     service: notify.bot_to_grcanosa
   alias: hass_startup
   condition: []
