@@ -22,67 +22,67 @@ sensor.unknown:
   name:
   platform: zwave
   unique_id: 3-72057594093273090
-sensor.neo_coolcam_power_plug_12a_power:
+sensor.switchone_power:
   name:
   platform: zwave
   unique_id: 3-72057594093273218
-zwave.neo_coolcam_power_plug_12a:
+zwave.switchone:
   name:
   platform: zwave
   unique_id: node-3
-sensor.neo_coolcam_power_plug_12a_voltage:
+sensor.switchone_voltage:
   name:
   platform: zwave
   unique_id: 3-72057594093273346
-sensor.neo_coolcam_power_plug_12a_current:
+sensor.switchone_current:
   name:
   platform: zwave
   unique_id: 3-72057594093273410
-sensor.neo_coolcam_power_plug_12a_exporting:
+sensor.switchone_exporting:
   name:
   platform: zwave
   unique_id: 3-72057594093273600
-sensor.neo_coolcam_power_plug_12a_sourcenodeid:
+sensor.switchone_sourcenodeid:
   name:
   platform: zwave
   unique_id: 3-72057594094305313
-sensor.neo_coolcam_power_plug_12a_power_management:
+sensor.switchone_power_management:
   name:
   platform: zwave
   unique_id: 3-72057594094305457
-sensor.neo_coolcam_power_plug_12a_previous_reading:
+sensor.switchone_previous_reading:
   name:
   platform: zwave
   unique_id: 3-72057594093273106
-sensor.neo_coolcam_power_plug_12a_interval:
+sensor.switchone_interval:
   name:
   platform: zwave
   unique_id: 3-72057594093273123
-sensor.neo_coolcam_power_plug_12a_previous_reading_2:
+sensor.switchone_previous_reading_2:
   name:
   platform: zwave
   unique_id: 3-72057594093273234
-sensor.neo_coolcam_power_plug_12a_interval_2:
+sensor.switchone_interval_2:
   name:
   platform: zwave
   unique_id: 3-72057594093273251
-sensor.neo_coolcam_power_plug_12a_previous_reading_3:
+sensor.switchone_previous_reading_3:
   name:
   platform: zwave
   unique_id: 3-72057594093273362
-sensor.neo_coolcam_power_plug_12a_interval_3:
+sensor.switchone_interval_3:
   name:
   platform: zwave
   unique_id: 3-72057594093273379
-sensor.neo_coolcam_power_plug_12a_previous_reading_4:
+sensor.switchone_previous_reading_4:
   name:
   platform: zwave
   unique_id: 3-72057594093273426
-sensor.neo_coolcam_power_plug_12a_interval_4:
+sensor.switchone_interval_4:
   name:
   platform: zwave
   unique_id: 3-72057594093273443
-zwave.domitech_smart_led_retrofit_kit_ze27eu:
+zwave.lightone:
   name:
   platform: zwave
   unique_id: node-4
