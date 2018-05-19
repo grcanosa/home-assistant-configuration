@@ -16,3 +16,9 @@ sensor.switchone_interval_3_2:
 sensor.switchone_interval_3_22:
   ignored: true
   polling_intensity: 0
+sensor.alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.neo_coolcam_power_plug_12a_interval_4:
+  ignored: true
+  polling_intensity: 0
