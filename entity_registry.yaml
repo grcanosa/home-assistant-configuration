@@ -86,3 +86,7 @@ zwave.lightone:
   name:
   platform: zwave
   unique_id: node-4
+media_player.chromecastgonzalo:
+  name:
+  platform: cast
+  unique_id: 06b2d36a-8118-c779-3445-2ea79b481125
