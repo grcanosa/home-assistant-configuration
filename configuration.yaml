@@ -77,7 +77,7 @@ device_tracker: !include include/device_tracker.yaml
 
 
 telegram_bot:
-  - platform: polling
+  - platform: broadcast
     api_key: !secret grcanosabot_apikey
     allowed_chat_ids:
       - !secret grcanosa_chatid
