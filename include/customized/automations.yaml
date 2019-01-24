@@ -1,5 +1,0 @@
-automation.hass_startup:
-  friendly_name: "HASS BEGINS"
-  
-automation.enciende_termo_morning:
-  friendly_name: "Enciende Mañanas"

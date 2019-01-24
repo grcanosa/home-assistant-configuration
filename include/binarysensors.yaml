@@ -1,5 +1,0 @@
-- platform: template
-  sensors: 
-    termo_start:
-      value_template: '{{states("input_select.termo_start_time") == states("sensor.time")}}'
-      friendly_name: 'Termo Start'

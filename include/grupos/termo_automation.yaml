@@ -1,6 +1,0 @@
-termo_automation:
-  name: "Termo Mañanas"
-  entities:
-    - automation.enciende_termo_morning
-    - input_select.termo_start_time
-    - input_number.slider_termo_start_time
